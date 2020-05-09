@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, button, input {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    font-weight: var(--front-weight-normal);
+}
+
+.hidden {
+    display: none;
+}

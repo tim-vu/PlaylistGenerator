@@ -1,0 +1,22 @@
+.track-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.track-description {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+}
+
+.track-info {
+    margin-left: 1rem;
+}
+
+.track-icon {
+    flex-shrink: 0;
+}

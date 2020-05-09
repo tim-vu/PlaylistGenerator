@@ -1,0 +1,35 @@
+.seed-selector {
+    margin: auto;
+}
+
+.searchbar-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.search-results {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z-index: 2;
+}
+
+.search-results-dropdown {
+    position: absolute;
+    width: 100%;
+    padding: 30px 1rem 1rem 1rem;
+    margin-top: -35px;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.seed-tracks-deselect {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    color: var(--dimgray);
+}

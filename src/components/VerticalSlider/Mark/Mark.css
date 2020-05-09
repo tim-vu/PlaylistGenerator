@@ -1,0 +1,9 @@
+.marker {
+    border-left: 3px solid black;
+}
+
+.marker-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

@@ -1,0 +1,27 @@
+.round-checkbox
+{
+    position: relative;
+    appearance: none;
+    background-color: var(--darkgray);
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+.round-checkbox:checked {
+    background-color: var(--green);
+}
+
+.round-checkbox:checked::before
+{
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 12px;
+    top: 8px;
+    content: '\02143';
+    color: #fff;
+    transform: rotate(40deg);
+}

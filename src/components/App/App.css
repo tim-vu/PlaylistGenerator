@@ -1,0 +1,51 @@
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95) 5%) no-repeat fixed;
+    min-width: 400px;
+}
+
+:root {
+    --dimgray: #b3b3b3;
+    --darkgray: #282828;
+    --green: #1db954;
+    --front-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+}
+
+* {
+    color: #fff;
+}
+
+.hide {
+    display: none
+}
+
+.show {
+    display: block;
+}
+
+.page {
+    padding: 1rem;
+}
+
+.spotify-button {
+    height: 40px;
+    background-color: var(--green);
+    border: none;
+    border-radius: 40px;
+    font-weight: var(--font-weight-bold);
+}
+
+.configuration > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.configuration {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+}
+
