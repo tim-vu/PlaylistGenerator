@@ -1,10 +1,12 @@
 .spotify-login {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     margin: 0;
     width: 100%;
     height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     z-index: 5;
     background-color: #000000;background-image: linear-gradient(#414141 0%, #000 10%);
 }
