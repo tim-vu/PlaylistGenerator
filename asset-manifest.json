@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PlaylistGenerator/static/css/main.464a29e6.chunk.css",
+    "main.css": "/PlaylistGenerator/static/css/main.3b87b71f.chunk.css",
     "main.js": "/PlaylistGenerator/static/js/main.04336d59.chunk.js",
     "main.js.map": "/PlaylistGenerator/static/js/main.04336d59.chunk.js.map",
     "runtime-main.js": "/PlaylistGenerator/static/js/runtime-main.3ccfe155.js",
@@ -8,9 +8,9 @@
     "static/js/2.7a291611.chunk.js": "/PlaylistGenerator/static/js/2.7a291611.chunk.js",
     "static/js/2.7a291611.chunk.js.map": "/PlaylistGenerator/static/js/2.7a291611.chunk.js.map",
     "index.html": "/PlaylistGenerator/index.html",
-    "precache-manifest.3cd93c94792fa27353f78d0d52db3a09.js": "/PlaylistGenerator/precache-manifest.3cd93c94792fa27353f78d0d52db3a09.js",
+    "precache-manifest.8e7b215abf8934e4c992d71b66e52b5e.js": "/PlaylistGenerator/precache-manifest.8e7b215abf8934e4c992d71b66e52b5e.js",
     "service-worker.js": "/PlaylistGenerator/service-worker.js",
-    "static/css/main.464a29e6.chunk.css.map": "/PlaylistGenerator/static/css/main.464a29e6.chunk.css.map",
+    "static/css/main.3b87b71f.chunk.css.map": "/PlaylistGenerator/static/css/main.3b87b71f.chunk.css.map",
     "static/js/2.7a291611.chunk.js.LICENSE.txt": "/PlaylistGenerator/static/js/2.7a291611.chunk.js.LICENSE.txt",
     "static/media/arrowleft.svg": "/PlaylistGenerator/static/media/arrowleft.6468634d.svg",
     "static/media/cross.svg": "/PlaylistGenerator/static/media/cross.cad70081.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.3ccfe155.js",
     "static/js/2.7a291611.chunk.js",
-    "static/css/main.464a29e6.chunk.css",
+    "static/css/main.3b87b71f.chunk.css",
     "static/js/main.04336d59.chunk.js"
   ]
 }

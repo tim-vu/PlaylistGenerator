@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "113124a49c0d464e41d30150e5a50fc6",
+    "revision": "cb63de2b8d254b4c8987de6d7ff8ed21",
     "url": "/PlaylistGenerator/index.html"
   },
   {
-    "revision": "8d23e9465f9f8aee7183",
-    "url": "/PlaylistGenerator/static/css/main.464a29e6.chunk.css"
+    "revision": "9ecceeee7fe95ad054d9",
+    "url": "/PlaylistGenerator/static/css/main.3b87b71f.chunk.css"
   },
   {
     "revision": "7a037d528ab24eae9c07",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PlaylistGenerator/static/js/2.7a291611.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8d23e9465f9f8aee7183",
+    "revision": "9ecceeee7fe95ad054d9",
     "url": "/PlaylistGenerator/static/js/main.04336d59.chunk.js"
   },
   {
