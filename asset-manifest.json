@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/playlistgenerator/static/css/main.464a29e6.chunk.css",
-    "main.js": "/playlistgenerator/static/js/main.f2ef8ef6.chunk.js",
-    "main.js.map": "/playlistgenerator/static/js/main.f2ef8ef6.chunk.js.map",
-    "runtime-main.js": "/playlistgenerator/static/js/runtime-main.81dcf764.js",
-    "runtime-main.js.map": "/playlistgenerator/static/js/runtime-main.81dcf764.js.map",
-    "static/js/2.7a291611.chunk.js": "/playlistgenerator/static/js/2.7a291611.chunk.js",
-    "static/js/2.7a291611.chunk.js.map": "/playlistgenerator/static/js/2.7a291611.chunk.js.map",
-    "index.html": "/playlistgenerator/index.html",
-    "precache-manifest.ef46d8b5cbf521d20b93f72123c86fb4.js": "/playlistgenerator/precache-manifest.ef46d8b5cbf521d20b93f72123c86fb4.js",
-    "service-worker.js": "/playlistgenerator/service-worker.js",
-    "static/css/main.464a29e6.chunk.css.map": "/playlistgenerator/static/css/main.464a29e6.chunk.css.map",
-    "static/js/2.7a291611.chunk.js.LICENSE.txt": "/playlistgenerator/static/js/2.7a291611.chunk.js.LICENSE.txt",
-    "static/media/arrowleft.svg": "/playlistgenerator/static/media/arrowleft.6468634d.svg",
-    "static/media/cross.svg": "/playlistgenerator/static/media/cross.cad70081.svg"
+    "main.css": "/PlaylistGenerator/static/css/main.464a29e6.chunk.css",
+    "main.js": "/PlaylistGenerator/static/js/main.04336d59.chunk.js",
+    "main.js.map": "/PlaylistGenerator/static/js/main.04336d59.chunk.js.map",
+    "runtime-main.js": "/PlaylistGenerator/static/js/runtime-main.3ccfe155.js",
+    "runtime-main.js.map": "/PlaylistGenerator/static/js/runtime-main.3ccfe155.js.map",
+    "static/js/2.7a291611.chunk.js": "/PlaylistGenerator/static/js/2.7a291611.chunk.js",
+    "static/js/2.7a291611.chunk.js.map": "/PlaylistGenerator/static/js/2.7a291611.chunk.js.map",
+    "index.html": "/PlaylistGenerator/index.html",
+    "precache-manifest.3cd93c94792fa27353f78d0d52db3a09.js": "/PlaylistGenerator/precache-manifest.3cd93c94792fa27353f78d0d52db3a09.js",
+    "service-worker.js": "/PlaylistGenerator/service-worker.js",
+    "static/css/main.464a29e6.chunk.css.map": "/PlaylistGenerator/static/css/main.464a29e6.chunk.css.map",
+    "static/js/2.7a291611.chunk.js.LICENSE.txt": "/PlaylistGenerator/static/js/2.7a291611.chunk.js.LICENSE.txt",
+    "static/media/arrowleft.svg": "/PlaylistGenerator/static/media/arrowleft.6468634d.svg",
+    "static/media/cross.svg": "/PlaylistGenerator/static/media/cross.cad70081.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.81dcf764.js",
+    "static/js/runtime-main.3ccfe155.js",
     "static/js/2.7a291611.chunk.js",
     "static/css/main.464a29e6.chunk.css",
-    "static/js/main.f2ef8ef6.chunk.js"
+    "static/js/main.04336d59.chunk.js"
   ]
 }
