@@ -71,7 +71,7 @@ const SpotifyLogin: React.FC<SpotifyLoginProps> = ({
   return (
     <div className={"spotify-login " + className}>
       <div className="spotify-login-title">
-        <h1>Spotify playlist generator</h1>
+        <h1>Playlist Generator for Spotify</h1>
         <div className="spotify-login-content">
           <h2>Step 1: Login to spotify</h2>
           <button

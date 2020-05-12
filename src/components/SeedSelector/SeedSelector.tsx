@@ -16,7 +16,8 @@ import { deselectTrack, selectTrack } from "../../store/seedtrack/actions";
 import { connect } from "react-redux";
 import { AuthenticationState } from "../../store/authentication/types";
 
-const TRACKS_DISPLAYED = 5;
+const MAX_SEED_TRACKS = 5;
+const MAX_DISPLAYED_TRACKS = 5;
 
 const SpotifyApi = new SpotifyWebApi();
 
@@ -38,7 +39,7 @@ const SeedSelector: React.FC<SeedSelectorProps> = ({
   SpotifyApi.setAccessToken(authentication.accessToken);
 
   const handleQueryChanged = async (query: string) => {
-    if (query.length === 0) {
+    if (query.length === 0 || seedTracks.length === MAX_SEED_TRACKS) {
       setTracks([]);
       return;
     }
@@ -58,7 +59,10 @@ const SeedSelector: React.FC<SeedSelectorProps> = ({
     }
   };
 
-  const classNameDropdown = tracks.length === 0 ? "hide" : "show";
+  const classNameDropdown =
+    tracks.length === 0 || seedTracks.length === MAX_SEED_TRACKS
+      ? "hide"
+      : "show";
 
   return (
     <div>
@@ -69,7 +73,7 @@ const SeedSelector: React.FC<SeedSelectorProps> = ({
         </div>
         <div className="search-results">
           <div className={"search-results-dropdown " + classNameDropdown}>
-            {tracks.slice(0, TRACKS_DISPLAYED).map((t) => (
+            {tracks.slice(0, MAX_DISPLAYED_TRACKS).map((t) => (
               <TrackListItem
                 track={t}
                 key={t.id}
