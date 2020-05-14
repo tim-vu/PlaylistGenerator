@@ -49,3 +49,53 @@ body {
     margin-bottom: 1.5rem;
 }
 
+@media only screen and (min-width: 800px) {
+
+    .page {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+
+    .configuration {
+        height: 100%;
+        min-width: 400px;
+        margin-bottom: 0;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .configuration .seed-selector {
+        flex: 1;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .playlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .playlist-tracks {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .page {
+        width: 1000px;
+        margin: auto;
+    }
+
+}
+
+
+

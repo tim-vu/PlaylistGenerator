@@ -3,7 +3,7 @@ import SpotifyWebApi from "spotify-web-api-js";
 
 export const generatePlaylist = async (tracks : SpotifyApi.TrackObjectFull[], parameters : RecommendationParameters, accessToken: string) : Promise<SpotifyApi.TrackObjectFull[]> => {
 
-  await new Promise(r => setTimeout(r, 5000));
+  await new Promise(r => setTimeout(r, 1000));
 
   const spotifyApi = new SpotifyWebApi();
   spotifyApi.setAccessToken(accessToken);

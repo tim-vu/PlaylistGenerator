@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 
 import "./Playlist.css";
 
@@ -19,6 +19,7 @@ interface PlaylistProps {
 interface PlaylistState {
   tracks: SpotifyApi.TrackObjectFull[];
   parameters: RecommendationParameters | null;
+  seedTracks: SpotifyApi.TrackObjectFull[];
 }
 
 const Spinner = () => (
@@ -39,6 +40,7 @@ const Playlist: React.FC<PlaylistProps> = ({
   const [state, setState] = React.useState<PlaylistState>({
     tracks: [],
     parameters: null,
+    seedTracks: [],
   });
 
   const [isGenerating, setGenerating] = React.useState(false);
@@ -51,6 +53,7 @@ const Playlist: React.FC<PlaylistProps> = ({
         setState({
           tracks,
           parameters,
+          seedTracks,
         });
         setGenerating(false);
       })
@@ -58,6 +61,7 @@ const Playlist: React.FC<PlaylistProps> = ({
         setState({
           tracks: [],
           parameters: null,
+          seedTracks: [],
         });
         setGenerating(false);
       });
@@ -77,8 +81,14 @@ const Playlist: React.FC<PlaylistProps> = ({
       });
   };
 
-  const canGenerate = state.parameters !== parameters && seedTracks.length >= 3;
+  const canGenerate =
+    seedTracks.length >= 3 &&
+    (parameters !== state.parameters || seedTracks !== state.seedTracks);
   const canAddPlaylist = state.tracks.length > 0;
+
+  const loadingStyle: CSSProperties = {
+    justifyContent: "space-around",
+  };
 
   return (
     <div className="playlist">
@@ -99,7 +109,7 @@ const Playlist: React.FC<PlaylistProps> = ({
           Add playlist
         </button>
       </div>
-      <div className="playlist-tracks">
+      <div className="playlist-tracks" style={isGenerating ? loadingStyle : {}}>
         {isGenerating ? (
           <Spinner />
         ) : (

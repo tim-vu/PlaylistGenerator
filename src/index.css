@@ -23,6 +23,11 @@ body, button, input {
     font-weight: var(--front-weight-normal);
 }
 
+#root {
+    width: 100%;
+    height: 100%;
+}
+
 .hidden {
     display: none;
 }

@@ -65,47 +65,45 @@ const SeedSelector: React.FC<SeedSelectorProps> = ({
       : "show";
 
   return (
-    <div>
-      <div className="seed-selector">
-        <h2 className="section-title">Step 2: Select seed songs</h2>
-        <div className="searchbar-wrapper">
-          <SearchBar onQueryChanged={handleQueryChanged} />
-        </div>
-        <div className="search-results">
-          <div className={"search-results-dropdown " + classNameDropdown}>
-            {tracks.slice(0, MAX_DISPLAYED_TRACKS).map((t) => (
-              <TrackListItem
-                track={t}
-                key={t.id}
-                icon={
-                  <Checkbox
-                    id={t.id}
-                    checked={seedTracks.some((e) => e.id === t.id)}
-                    onCheckedChanged={(checked) =>
-                      handleCheckedChange(t, checked)
-                    }
-                  />
-                }
-              />
-            ))}
-          </div>
-        </div>
-        <div className={"seed-tracks"}>
-          {seedTracks.map((t) => (
+    <div className="seed-selector">
+      <h2 className="section-title">Step 2: Select seed songs</h2>
+      <div className="searchbar-wrapper">
+        <SearchBar onQueryChanged={handleQueryChanged} />
+      </div>
+      <div className="search-results">
+        <div className={"search-results-dropdown " + classNameDropdown}>
+          {tracks.slice(0, MAX_DISPLAYED_TRACKS).map((t) => (
             <TrackListItem
               track={t}
               key={t.id}
               icon={
-                <button
-                  className="seed-tracks-deselect"
-                  onClick={() => handleCheckedChange(t, false)}
-                >
-                  <img src={CrossIcon} alt="cross icon" />
-                </button>
+                <Checkbox
+                  id={t.id}
+                  checked={seedTracks.some((e) => e.id === t.id)}
+                  onCheckedChanged={(checked) =>
+                    handleCheckedChange(t, checked)
+                  }
+                />
               }
             />
           ))}
         </div>
+      </div>
+      <div className={"seed-tracks"}>
+        {seedTracks.map((t) => (
+          <TrackListItem
+            track={t}
+            key={t.id}
+            icon={
+              <button
+                className="seed-tracks-deselect"
+                onClick={() => handleCheckedChange(t, false)}
+              >
+                <img src={CrossIcon} alt="cross icon" />
+              </button>
+            }
+          />
+        ))}
       </div>
     </div>
   );
